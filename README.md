@@ -45,15 +45,19 @@ claude --plugin-dir /path/to/deck-graphics
 ```
 Then run `/deck-graphics:illustrate path/to/talk.pptx` in the session.
 
-**Cowork (Claude Desktop):** plugins install from a *marketplace* — there's no
-zip/folder upload. This repo doubles as its own marketplace
-(`.claude-plugin/marketplace.json` points at the repo root), so add it in
-Cowork via **+ → Plugins → Add plugin**, or from any Claude Code session:
+**Claude Desktop (Code tab) or Claude Code in VS Code / terminal:** plugins
+install from a *marketplace* — there's no zip/folder upload. This repo doubles
+as its own marketplace (`.claude-plugin/marketplace.json` points at the repo
+root). In any session's prompt box, run:
 
 ```
-/plugin marketplace add danames/deck-graphics
+/plugin marketplace add https://github.com/danames/deck-graphics
 /plugin install deck-graphics@deck-graphics
 ```
+
+(Use the full URL — Claude Desktop's marketplace add may not resolve the
+short `owner/repo` form. The UI route is **+ → Plugins → Add plugin** and
+paste the URL as a new marketplace.)
 
 Note: plugins run in local sessions, not Claude cloud sessions.
 
