@@ -1,0 +1,7 @@
+{
+  "name": "deck-graphics",
+  "version": "0.1.0",
+  "description": "Claude directs, an image model illustrates. Generates cute doodle graphics for a slide deck, evaluates each result, and places the keepers on the slides.",
+  "author": { "name": "Dan Ames" },
+  "keywords": ["powerpoint", "pptx", "slides", "image-generation", "illustration"]
+}

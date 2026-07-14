@@ -1,0 +1,13 @@
+{
+  "//": "OPTIONAL image-gen connector — the alternative to the script's API path.",
+  "//1": "Enabling this lets Claude call an image tool directly instead of hitting an API in the script.",
+  "//2": "Hugging Face example below exposes FLUX/SD Spaces. Note the style/text trade-off vs gpt-image-1/Gemini.",
+  "//3": "Set HF_TOKEN in your environment. (Use .../mcp?login WITHOUT the header only for interactive OAuth instead of a token.)",
+  "mcpServers": {
+    "huggingface": {
+      "type": "http",
+      "url": "https://huggingface.co/mcp",
+      "headers": { "Authorization": "Bearer ${HF_TOKEN}" }
+    }
+  }
+}

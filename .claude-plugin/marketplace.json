@@ -1,0 +1,11 @@
+{
+  "name": "deck-graphics",
+  "owner": { "name": "Dan Ames" },
+  "plugins": [
+    {
+      "name": "deck-graphics",
+      "source": "./",
+      "description": "Claude directs, an image model illustrates: generate cute doodle graphics for a slide deck, evaluate each result visually, and place the keepers on the slides."
+    }
+  ]
+}
